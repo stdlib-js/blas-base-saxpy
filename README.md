@@ -24,32 +24,30 @@ limitations under the License.
 
 > Multiply a vector `x` by a constant `alpha` and add the result to `y`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-saxpy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-saxpy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.saxpy;
-})();
-</script>
+var saxpy = require( '@stdlib/blas-base-saxpy' );
 ```
 
 #### saxpy( N, alpha, x, strideX, y, strideY )
@@ -171,16 +169,11 @@ saxpy.ndarray( N, alpha, x, 2, 1, y, -1, y.length-1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var Float32Array = require( '@stdlib/array-float32' );
+var saxpy = require( '@stdlib/blas-base-saxpy' );
 
 var x;
 var y;
@@ -197,11 +190,6 @@ console.log( y );
 
 saxpy.ndarray( x.length, 5.0, x, 1, 0, y, -1, y.length-1 );
 console.log( y );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -288,6 +276,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/blas-base-saxpy/tree/deno
 [umd-url]: https://github.com/stdlib-js/blas-base-saxpy/tree/umd
 [esm-url]: https://github.com/stdlib-js/blas-base-saxpy/tree/esm
+[branches-url]: https://github.com/stdlib-js/blas-base-saxpy/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-saxpy/main/LICENSE
 
@@ -301,9 +290,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/blas/base/daxpy]: https://github.com/stdlib-js/blas-base-daxpy/tree/umd
+[@stdlib/blas/base/daxpy]: https://github.com/stdlib-js/blas-base-daxpy
 
-[@stdlib/blas/base/gaxpy]: https://github.com/stdlib-js/blas-base-gaxpy/tree/umd
+[@stdlib/blas/base/gaxpy]: https://github.com/stdlib-js/blas-base-gaxpy
 
 <!-- </related-links> -->
 
