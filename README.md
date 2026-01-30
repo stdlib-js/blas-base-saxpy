@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import saxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@deno/mod.js';
+import saxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@v0.3.0-deno/mod.js';
 ```
 
 #### saxpy( N, alpha, x, strideX, y, strideY )
@@ -159,7 +159,7 @@ saxpy.ndarray( 3, alpha, x, 2, 1, y, -1, y.length-1 );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import saxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@deno/mod.js';
+import saxpy from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-saxpy@v0.3.0-deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
