@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`9d9b268`](https://github.com/stdlib-js/stdlib/commit/9d9b2684d2d965826e3fa1426a1eb204e44231a8) - **bench:** refactor to use dynamic memory allocation in `blas/base/saxpy` [(#10146)](https://github.com/stdlib-js/stdlib/pull/10146) _(by Prajjwal Bajpai)_
 -   [`b22ed96`](https://github.com/stdlib-js/stdlib/commit/b22ed969fd6fcff0278ffc6c50c2ce774ab00ba7) - **bench:** refactor to use string interpolation in `blas/base/saxpy` [(#10147)](https://github.com/stdlib-js/stdlib/pull/10147) _(by Prajjwal Bajpai)_
 
 </details>
