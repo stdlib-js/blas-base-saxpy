@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-02-07)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`b22ed96`](https://github.com/stdlib-js/stdlib/commit/b22ed969fd6fcff0278ffc6c50c2ce774ab00ba7) - **bench:** refactor to use string interpolation in `blas/base/saxpy` [(#10147)](https://github.com/stdlib-js/stdlib/pull/10147) _(by Prajjwal Bajpai)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Prajjwal Bajpai
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.3.0">
 
 ## 0.3.0 (2026-01-30)
